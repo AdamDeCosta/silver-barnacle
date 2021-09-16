@@ -15,7 +15,6 @@
 		DB94572026EFD1AF00BFF092 /* Interview_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94571F26EFD1AF00BFF092 /* Interview_SampleTests.swift */; };
 		DB94572B26EFD1AF00BFF092 /* Interview_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94572A26EFD1AF00BFF092 /* Interview_SampleUITests.swift */; };
 		DB94573C26EFEA1E00BFF092 /* BreedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94573B26EFEA1E00BFF092 /* BreedsTableViewController.swift */; };
-		DB94573E26EFEA5200BFF092 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94573D26EFEA5200BFF092 /* FavoritesTableViewController.swift */; };
 		DB94574026EFEF3F00BFF092 /* BreedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94573F26EFEF3F00BFF092 /* BreedsViewModel.swift */; };
 		DB94574226EFEFA900BFF092 /* BreedsNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94574126EFEFA900BFF092 /* BreedsNetworkController.swift */; };
 		DB94574726EFF9D300BFF092 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94574626EFF9D300BFF092 /* Breed.swift */; };
@@ -55,7 +54,6 @@
 		DB94572A26EFD1AF00BFF092 /* Interview_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interview_SampleUITests.swift; sourceTree = "<group>"; };
 		DB94572C26EFD1AF00BFF092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB94573B26EFEA1E00BFF092 /* BreedsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsTableViewController.swift; sourceTree = "<group>"; };
-		DB94573D26EFEA5200BFF092 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		DB94573F26EFEF3F00BFF092 /* BreedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewModel.swift; sourceTree = "<group>"; };
 		DB94574126EFEFA900BFF092 /* BreedsNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsNetworkController.swift; sourceTree = "<group>"; };
 		DB94574626EFF9D300BFF092 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 		DB94573826EFE9A600BFF092 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				DB94573A26EFE9C800BFF092 /* Favorites */,
 				DB94573926EFE9C100BFF092 /* Breeds */,
 			);
 			path = Features;
@@ -159,14 +156,6 @@
 				DBBEC82326F246E900C8F9A8 /* BreedsDataSource.swift */,
 			);
 			path = Breeds;
-			sourceTree = "<group>";
-		};
-		DB94573A26EFE9C800BFF092 /* Favorites */ = {
-			isa = PBXGroup;
-			children = (
-				DB94573D26EFEA5200BFF092 /* FavoritesTableViewController.swift */,
-			);
-			path = Favorites;
 			sourceTree = "<group>";
 		};
 		DB94574326EFF90500BFF092 /* Model */ = {
@@ -312,7 +301,6 @@
 				DBBEC82426F246E900C8F9A8 /* BreedsDataSource.swift in Sources */,
 				DB94570926EFD1AA00BFF092 /* AppDelegate.swift in Sources */,
 				DB94573C26EFEA1E00BFF092 /* BreedsTableViewController.swift in Sources */,
-				DB94573E26EFEA5200BFF092 /* FavoritesTableViewController.swift in Sources */,
 				DB94574926EFFF9B00BFF092 /* Measurement.swift in Sources */,
 				DB94574226EFEFA900BFF092 /* BreedsNetworkController.swift in Sources */,
 				DB94570B26EFD1AA00BFF092 /* SceneDelegate.swift in Sources */,
