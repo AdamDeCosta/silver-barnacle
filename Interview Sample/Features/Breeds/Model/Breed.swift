@@ -46,7 +46,7 @@ extension Breed: Codable {
         let weight = try container.decode(Measurement.self, forKey: .weight)
         self.weight = weight.imperial
         
-        let height = try container.decode(Measurement.self, forKey: .weight) // BUG: Weight instead of height!
-        self.height = height.imperial
+        let height = try container.decode(Measurement.self, forKey: .weight)
+        self.height = height.metric
     }
 }
