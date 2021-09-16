@@ -20,6 +20,7 @@
 		DB94574726EFF9D300BFF092 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94574626EFF9D300BFF092 /* Breed.swift */; };
 		DB94574926EFFF9B00BFF092 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94574826EFFF9B00BFF092 /* Measurement.swift */; };
 		DBBEC82426F246E900C8F9A8 /* BreedsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEC82326F246E900C8F9A8 /* BreedsDataSource.swift */; };
+		DBBEC82726F3948100C8F9A8 /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBEC82626F3948100C8F9A8 /* BreedsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DB94574626EFF9D300BFF092 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		DB94574826EFFF9B00BFF092 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
 		DBBEC82326F246E900C8F9A8 /* BreedsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsDataSource.swift; sourceTree = "<group>"; };
+		DBBEC82626F3948100C8F9A8 /* BreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		DB94573826EFE9A600BFF092 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				DBBEC82526F393EF00C8F9A8 /* Details */,
 				DB94573926EFE9C100BFF092 /* Breeds */,
 			);
 			path = Features;
@@ -165,6 +168,14 @@
 				DB94574826EFFF9B00BFF092 /* Measurement.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DBBEC82526F393EF00C8F9A8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				DBBEC82626F3948100C8F9A8 /* BreedsViewController.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +312,7 @@
 				DBBEC82426F246E900C8F9A8 /* BreedsDataSource.swift in Sources */,
 				DB94570926EFD1AA00BFF092 /* AppDelegate.swift in Sources */,
 				DB94573C26EFEA1E00BFF092 /* BreedsTableViewController.swift in Sources */,
+				DBBEC82726F3948100C8F9A8 /* BreedsViewController.swift in Sources */,
 				DB94574926EFFF9B00BFF092 /* Measurement.swift in Sources */,
 				DB94574226EFEFA900BFF092 /* BreedsNetworkController.swift in Sources */,
 				DB94570B26EFD1AA00BFF092 /* SceneDelegate.swift in Sources */,

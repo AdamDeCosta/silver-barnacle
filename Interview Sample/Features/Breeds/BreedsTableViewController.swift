@@ -24,6 +24,16 @@ class BreedsTableViewController: UITableViewController {
             self?.activityIndicator.stopAnimating()
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? BreedDetailViewController,
+              let index = tableView.indexPathForSelectedRow?.row else {
+            return
+        }
+        
+        let breed = viewModel.breeds[index]
+        vc.breed = breed
+    }
 }
 
 
