@@ -11,28 +11,32 @@ protocol BreedsNetworkControllerProtocol {
     func getBreeds(completion: (([Breed]) -> Void)?)
 }
 
+fileprivate let BREEDS_ENDPOINT = "https://api.thedogapi.com/v1/breeds"
+
 struct BreedsNetworkController: BreedsNetworkControllerProtocol {
     func getBreeds(completion: (([Breed]) -> Void)? = nil) {
-        guard let url = URL(string: "https://decosta.io") else {
+        guard let url = URL(string: BREEDS_ENDPOINT) else {
             assertionFailure("Unable to create URL")
             return
         }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
-            guard error == nil, let data = data else {
-                completion?([])
-                return
+            DispatchQueue.main.async {
+                guard error == nil, let data = data else {
+                    completion?([])
+                    return
+                }
+                
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                
+                guard let breeds = try? decoder.decode([Breed].self, from: data) else {
+                    completion?([])
+                    return
+                }
+                
+                completion?(breeds)
             }
-            
-            let decoder = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
-            
-            guard let breeds = try? decoder.decode([Breed].self, from: data) else {
-                completion?([])
-                return
-            }
-            
-            completion?(breeds)
-        }
+        }.resume()
     }
 }

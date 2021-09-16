@@ -19,6 +19,7 @@ class BreedsViewModel {
     func fetchBreeds(completion: (([Breed]) -> Void)? = nil) {
         networkController.getBreeds { [weak self] breeds in
             self?.breeds = breeds
+            completion?(breeds)
         }
     }
 }
