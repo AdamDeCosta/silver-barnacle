@@ -28,7 +28,7 @@ extension Breed: Codable {
         case id
         case name
         case temperament
-        case lifeSpan
+        case lifeSpan // endpoint sends as life_span
         case origin
         case weight
         case height

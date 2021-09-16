@@ -20,10 +20,14 @@ class BreedDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.breedName.text = breed?.name
-        self.origin.text = breed?.origin
-        self.temperament.text = breed?.temperament
-        self.height.text = breed?.height
-        self.weight.text = breed?.weight
+        guard let breed = breed else {
+            return
+        }
+        
+        self.breedName.text = breed.name
+        self.origin.text = breed.origin
+        self.temperament.text = breed.temperament
+        self.height.text = "Height: \(breed.height)lbs"
+        self.weight.text = "Weight: \(breed.weight)\""
     }
 }

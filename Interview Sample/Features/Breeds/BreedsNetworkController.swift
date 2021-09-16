@@ -28,13 +28,13 @@ struct BreedsNetworkController: BreedsNetworkControllerProtocol {
                 }
                 
                 let decoder = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                decoder.keyDecodingStrategy = .useDefaultKeys
                 
                 do {
                     let breeds = try decoder.decode([Breed].self, from: data)
                     completion?(breeds)
                 } catch {
-                    print("Error: \(error.localizedDescription)")
+                    print("Error: \(error)")
                     completion?([])
                 }
             }

@@ -21,7 +21,6 @@ class BreedsTableViewController: UITableViewController {
         
         viewModel.fetchBreeds { [weak self] _ in
             self?.tableView.reloadData()
-            self?.activityIndicator.stopAnimating()
         }
     }
     
